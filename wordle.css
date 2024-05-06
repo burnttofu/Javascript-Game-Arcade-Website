@@ -1,0 +1,121 @@
+#game, .restart{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    padding-top: 30px;
+}
+  
+.guess-box{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    margin: 4px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.filled-box{
+    border: 2px solid black;
+}
+
+.guess-row{
+    display: flex;
+}
+
+#keyboard-cont{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+#keyboard-cont div{
+    display: flex;
+}
+  
+.second-row{
+    margin: 0.5rem 0;
+}
+  
+.keyboard-button{
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin: 0 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#keyboard-cont{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+#keyboard-cont div{
+    display: flex;
+}
+  
+.second-row{
+    margin: 0.5rem 0;
+}
+  
+.keyboard-button{
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin: 0 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.message{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    font-size: 50px; 
+    color: green;
+    text-align: center;
+}
+
+.restart{
+    position: relative;
+    z-index: 999;
+}
+
+.victory_display{
+    padding-top: 600px;
+    
+}
+
+.defeat_display{
+    padding-top: 600px;
+    color:red;
+}
+
+.error, #error{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: red; /* Green background */
+    color: white; /* White text */
+    text-align: center;
+    padding: 20px;
+    z-index: 5; /* Ensure the notification is above other content */
+    display: none;
+}

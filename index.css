@@ -1,0 +1,60 @@
+html{
+    height:100%;
+}
+
+header{
+    display:flex;
+    justify-content:center;
+    background-color: beige;
+}
+
+/* #wordle, #hangman, #coin_flip, #dice_roll{
+
+} */
+
+#row1 , #row2{
+    align-items: center;
+}
+
+#game_selection{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100px; /* Height of the header */
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: lightblue;
+}
+
+.cell {
+    padding: 75px;
+    background-color: #fff;
+    border: 5px solid #333;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    aspect-ratio: 1 / 1; /* Ensures that cells are square */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* Set a fixed height for better visual */
+    color: #444; /* Default text color */
+}
+
+#wordle.cell{
+    background-color: rgb(170, 170, 247);
+}
+
+#dice_roll.cell{
+    background-color: rgb(159, 218, 162);
+}
+
+#coin_flip.cell{
+    background-color: rgb(228, 213, 147);
+}
+
+#matching.cell{
+    background-color: rgb(236, 150, 150);
+}
